@@ -6,6 +6,11 @@
 ![ada-deepseek-v3.png](./images/ada-deepseek-v3.png)
 
 ## Setup
+
+### System dependencies
+brew install ffmpeg
+
+
 - `cp .env.sample .env`
   - Update with your keys `DEEPSEEK_API_KEY` and `ELEVEN_API_KEY`
 - `uv sync`

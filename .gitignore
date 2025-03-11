@@ -199,3 +199,6 @@ realtimesst.log
 *.db
 
 report.json
+
+scratchpad.md
+users_report.json
