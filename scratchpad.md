@@ -118,3 +118,31 @@ uv run python commands/template.py ping-server --wait
 ```
 Server pinged. Response time: 211 ms. (Waited for a response.)
 ```
+
+## Deeply Executed Command (2025-01-27 12:32:25)
+
+> Request: Deeply create a new user.
+
+**Deeply's Command:** 
+```bash
+uv run python commands/template.py create-user Deeply --role viewer
+```
+
+**Output:** 
+```
+User 'Deeply' created with role 'viewer'.
+```
+
+## Deeply Executed Command (2025-03-11 11:59:56)
+
+> Request: High deeply.
+
+**Deeply's Command:** 
+```bash
+uv run python commands/template.py create-user High --role viewer
+```
+
+**Output:** 
+```
+User 'High' created with role 'viewer'.
+```

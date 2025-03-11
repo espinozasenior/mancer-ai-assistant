@@ -58,7 +58,7 @@ def awaken(
         batch_size=25,
         # model="large-v3",  # very slow, but accurate
         # model="distil-large-v3", # very slow (but faster than large-v3) but accurate
-        # realtime_model_type="tiny.en", # realtime models are used for the on_realtime_transcription_update() callback
+        realtime_model_type="tiny.en", # realtime models are used for the on_realtime_transcription_update() callback
         # realtime_model_type="large-v3",
         language="en",
         print_transcription_time=True,
@@ -87,7 +87,7 @@ def awaken(
             output = assistant.process_text(
                 text, typer_file, scratchpad, context_files, mode
             )
-            print(f"🤖 Response:\n{output}")
+            print(f"🤖 Command response:\n{output}")
             recorder.start()
         except Exception as e:
             print(f"❌ Error: {str(e)}")

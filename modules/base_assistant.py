@@ -57,7 +57,7 @@ class PlainAssistant:
             self.conversation_history.append({"role": "user", "content": text})
 
             # Generate response using configured brain
-            self.logger.info(f"🤖 Processing text with {self.brain}...")
+            self.logger.info(f"🤖Base Processing text with {self.brain}...")
             if self.brain.startswith("ollama:"):
                 model_no_prefix = ":".join(self.brain.split(":")[1:])
                 response = ollama_conversational_prompt(

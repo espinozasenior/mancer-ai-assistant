@@ -135,7 +135,7 @@ class TyperAgent:
             )
 
             # Generate command using DeepSeek
-            self.logger.info("🤖 Processing text with DeepSeek...")
+            self.logger.info("🤖 Typer Processing text with DeepSeek...")
             prefix = f"uv run python {typer_file}"
             command = prefix_prompt(prompt=formatted_prompt, prefix=prefix)
 
@@ -210,7 +210,7 @@ class TyperAgent:
         response = prefix_prompt(
             prompt=response_prompt, prefix=prompt_prefix, no_prefix=True
         )
-        self.logger.info(f"🤖 Response: '{response}'")
+        self.logger.info(f"🤖 Spoken response: '{response}'")
         self.speak(response)
 
     def speak(self, text: str):

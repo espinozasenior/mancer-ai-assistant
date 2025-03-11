@@ -39,7 +39,7 @@ def chat():
 
             assistant_name = get_config("base_assistant.assistant_name")
             if assistant_name.lower() not in text.lower():
-                logger.info(f"🤖 Not {assistant_name} - ignoring")
+                logger.info(f"🤖 Not {assistant_name} - ignoring: text: {text}")
                 return
 
             # Check for exit commands
